@@ -1,0 +1,30 @@
+    we can create objects in the usestate
+    let [moves,setmoves] = useState({   blue : 0, 
+        green : 0,
+        yellow : 0,
+        red : 0})
+        when we change the value of a key in js the object is not rerendered again
+        for this we have to change/ replace the whole key
+        similar for the arrays or send this by the spread operator as in this case a temporary value is created
+        setmoves({...moves,blue: moves.blue+1});
+        
+        
+        arrays ko bhi hum spread kar ke pass karte ha
+        
+    Unique Keys for a list item:
+        Unique for every list. when we have multiple list and they are of same types 
+        uuid ka through generate kar sakte ha
+        import {v4 as uuidv4} from "uuid"
+        to use we have to call the uuidv4
+
+    simple functions ko arrow functions banane ka lia use call karte waqt use ke peecha arrow laga de ga us sa kia hoga ko wo use call 
+        tb hi kare ga jab use karna hoga 
+        ()=> deleteTask(todo.id)
+
+    go to react rev and look for update arrays in state this will tell you methods that you have to avoid 
+    
+    functions as props:
+        we can pass functions as a props
+    
+            
+     

@@ -1,0 +1,28 @@
+
+npm install react-router-dom@6 for the installation of the react router
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+route can be used as the child of the Routes
+
+jaha par bhi chahta ho ka components fix ho waha par ye ye RouterProvider laga do ga
+    <RouterProvider router={router} />
+
+    page reload na ho is case is ka lia hum link property ka use kare ga jis jo ka import hoti ha aise
+        import {Link} from 'react-router-dom'
+        our anchor tag ki jagah hum link ka use kare ga our href ki jagah par 'to' ka use karega
+        our jis component ko hum chahte ha ka us par click karne sa change na ho use uske parent ma wrap kr denge as a
+        fragment
+
+
+
+
+Material UI:   
+        bootstrap ki tarah is ma functionality and components bane hua hota ha    
+        npm install @mui/material@next @emotion/react @emotion/styled
+        emotion(emotion are best) and styled components
+
+        uses this font only:
+        npm install @fontsource/roboto
+

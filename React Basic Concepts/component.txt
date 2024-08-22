@@ -1,0 +1,116 @@
+function firstLetterCapital of component name(){
+	return(
+	
+		);
+}
+at a time we can return only a single component
+to render a component in our document we can do this by
+<componentname></componentname> or <componentname/>
+
+div ka andar multiple components use kar sakta ha but at a time single component return ho skata 
+
+return a single root element
+close all the tags even if there is no closing tag like img tag
+camelcasing format like adding a div having some class we can add this by a className = ""
+
+Fragments:
+	multiple tags return karwana ha to un ka uper aik div banana ki kia zaroorat ha extra node create karna ki 
+	return(<>
+		component nam
+	</>);
+
+
+Javascript ki  agar koi logic banae ha to use par hum curly braces lagata ha like kisi cheez ki value kisi variable ma store ha our curly braces ka andar ham operation
+laga sakta ha like name.toUppperCase()
+
+styling ka lia component wise styling ko divide kar deta ha 
+
+
+Props ma hamara pass object ata ha jo key hume chahie hoti ha usko destructure kar le 
+{propName,propName}
+ to send numbers directly we have also to wrap them in curly braces we can pass array, objects directly in them
+ if we directly use the array in the jsx it will simple show all in a sinlge line without having a space b/w them
+ for this we can send array of the elements in which there is
+
+let option  =  [<ol>
+	<li>"HI-TECH"</li>, <li>"Durable"</li> , <li>"Fast"</li>
+</ol>]
+ or we can do this in the file where we need this
+ <p>
+	{features.map((item)=>{
+		return <li>{item}</li>
+	})}
+</p>
+
+Conditionals:
+	price > 1000 ? "5%" : ""
+	is case me empty node create hoga DOM ma
+	best is
+			{price > 1000 ? <p>"Discount: 5%"</p> : "" }
+			 {price > 1000 && <p>"Discount: 5%"</p> }
+
+Dynamic/conditional component styling:
+	    let sty = {backgroundColor: price > 1800?"lightBlue":""}
+
+Install React Tools:
+	
+Handling Click Events in React:
+	for clicks we have to use the onlick property in the elements
+	mouseOver when we use the () it means that do this at the spot
+
+Components jab aik dafa render ho jae to uska baad beshak unki andar change hoti rahe to UI par change nhi ata 
+ya par state ka concept ata ha 
+state name ka variable banate ha our again wo render karta ha
+
+Hooks:
+	pehla components ko class components kehta tha ab functional components
+	some features are not present in the functional components that are added by the Hooks
+	15 Hooks in React
+	useState
+	const [state, setState] = useState(initialState)
+	state ki value check hoti ha phir setState wala method call hota ha us ma state ki value update hona ka bad component 
+	re-render hota ha 
+	hooks ko import bhi karna hota ha React sA 
+	array ma pehla aik variable banao our usi ka aga aik our setVariable ka name sa aik variable our banao
+	const [state, setState] = useState(initialState) initialState can be value
+	function increaseCount(){
+        setCount(count+1)
+    } 
+	state variable must be in the component body
+
+	Closure:
+		two functions that are nested and have varibles the inner function can access the outer one's var even the 
+		outer function is not called and directly the inner is called
+
+		function outer(){
+			let a = 10;
+			function inner(){
+				let b = 30
+				console.log(a + b)
+			}
+			return inner
+		}
+
+		let inner = outer()
+		inner()
+		the inner one preserves/save the outer varibales. These variable are scope chain
+		component rerender hota waqt initialization ka ilawa sab code again write hota ha 
+		
+	setCount wala function ko agar multiple times bhi call kare to sirf aik hi baar update hogi hi
+	setCount is asynchronous function
+	new value is dependent on the old value 
+
+	newstate value not dependent on the old state then we update
+	setCount((prevValue) =>{
+            return  prevValue + 1
+        })
+        setCount((prevValue) =>{
+            return prevValue + 1
+         })
+	if the value of state is not changed continuously then there will be no rerendering
+	usestate me hum function ko bhi call karsakte ha usko execute i.e() nhi karna bas khali reference bhejna ha
+	
+Types of components:
+	functional components, class, logical smart they have state variables , presentational dumb which is to design the UI and can have props and they donot have a state variable 
+	
+	

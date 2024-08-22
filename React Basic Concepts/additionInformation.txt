@@ -1,0 +1,6 @@
+To add icons in the react:
+	npm install @fortawesome/fontawesome-free
+	npm install @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons
+	import this in the file
+	import '@fortawesome/fontawesome-free/css/all.min.css';
+	import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

@@ -1,0 +1,21 @@
+From State: 
+    form elements mantian their internal state not with react state
+    for forms in react they will be updated by the setState
+    controlled components
+
+    input id and label must have a same id
+
+    in form we use htmlfor instead of for
+
+    when we are creating forms containing multiple inputs elements they need many functions plus so many state variables 
+    this is not a good practice
+    for this we to create a common handler for this
+    i.e create an object array of this 
+    and the input elements name must be same to the name of the key of objects
+
+    Computed Property Name:
+        [variable name] you access the property which have the first it's value can be evaluated then it can be used
+
+    Use Effect:
+        component render ho to us par agar hum koi kam karna chahte ha
+        it has setup which are also called as functions this function is executed when the state is changed
